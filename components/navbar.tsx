@@ -13,6 +13,7 @@ const navKeys = [
   { key: "nav.publications", href: "#publications" },
   { key: "nav.projects", href: "#projects" },
   { key: "nav.certifications", href: "#certifications" },
+  { key: "nav.languages", href: "#languages" },
 ]
 
 export function Navbar() {
@@ -42,18 +43,7 @@ export function Navbar() {
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault()
-            window.scrollTo({ top: 0, behavior: "smooth" })
-          }}
-          className="text-sm font-semibold tracking-tight text-[#2D2A26] hover:text-[#C75B39] transition-colors"
-        >
-          María Teresa Muñoz Martín
-        </a>
-
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-end px-4 sm:px-6 lg:px-8">
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
           {navKeys.map((item) => (

@@ -57,7 +57,7 @@ export function Footer() {
 
           <div className="pt-6 border-t border-[#E8DDD3] w-full">
             <p className="text-xs text-[#6B6560]">
-              {t("footer.built")} · {t("footer.rights")}
+              Last updated 2026
             </p>
           </div>
         </div>
