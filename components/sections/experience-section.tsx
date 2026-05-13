@@ -22,14 +22,14 @@ const experiences = [
   },
   {
     id: "initiation",
-    logo: "/images/sinai.png",
+    logo: "images/sinai.png",
     logoAlt: "SINAI",
     descKeys: ["exp.initiation.desc"],
     tags: ["RAG", "FAISS", "Sentence-BERT", "GPT-3.5", "LLaMA-2"],
   },
   {
     id: "icaro",
-    logo: "/images/sinai.png",
+    logo: "images/sinai.png",
     logoAlt: "SINAI",
     descKeys: ["exp.icaro.desc"],
     tags: ["NLP", "ML", "RAG", "Corpus Engineering"],
