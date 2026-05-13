@@ -24,7 +24,7 @@ const logoMap: Record<string, string> = {
   "Docker": "images/docker.png",
   "GitHub Actions": "images/githubactions.png",
   "Vercel": "images/vercel.png",
-  "V0": "images/v0.png",
+  "V0": "images/vercelv0.png",
 }
 
 const skillCategories = [
