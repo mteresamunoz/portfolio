@@ -7,21 +7,25 @@ import { Badge } from "@/components/ui/badge"
 const skillCategories = [
   {
     key: "skills.programming",
-    items: ["Python", "SQL", "C / C++", "Java"],
+    items: ["Python", "C / C++", "Java"],
+  },
+  {
+    key: "skills.databases",
+    items: ["MySQL", "ChromaDB", "Qdrant"],
   },
   {
     key: "skills.llm",
     items: [
       "LoRA", "QLoRA", "NF4", "FP4", "Int8", "Double Quantization", "bitsandbytes",
       "vLLM", "Knowledge Distillation", "Prompt Engineering", "lm-evaluation-harness",
-      "RAGAS", "LLM-as-a-judge", "Responsible / Green AI","Latxa",
+      "RAGAS", "LLM-as-a-judge", "Responsible / Green AI", "Latxa",
     ],
   },
   {
     key: "skills.rag",
     items: [
       "Hybrid Search (BM25+dense)", "Cross-encoder Re-ranking", "Reciprocal Rank Fusion",
-      "Query Rewriting / HyDE", "Semantic Chunking", "ChromaDB", "Qdrant",
+      "Query Rewriting / HyDE", "Semantic Chunking",
     ],
   },
   {

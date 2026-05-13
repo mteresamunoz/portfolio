@@ -93,6 +93,7 @@ const translations = {
     // Skills
     "skills.title": "Technical Skills",
     "skills.programming": "Programming Languages",
+    "skills.databases": "Databases",
     "skills.llm": "LLM & GenAI",
     "skills.rag": "RAG & Retrieval",
     "skills.nlp": "NLP Tasks",
@@ -236,6 +237,7 @@ const translations = {
     // Skills
     "skills.title": "Habilidades Técnicas",
     "skills.programming": "Lenguajes de Programación",
+    "skills.databases": "Bases de Datos",
     "skills.llm": "LLM y GenAI",
     "skills.rag": "RAG y Retrieval",
     "skills.nlp": "Tareas NLP",
