@@ -104,6 +104,8 @@ const translations = {
     "pub.semeval.title": "Sylloscope at SemEval-2026 Task 11",
     "pub.semeval.venue": "SemEval-2026 Workshop Task 11, co-located with ACL 2026",
     "pub.semeval.desc": "Designed a novel pipeline combining DeepSeek-enhanced knowledge distillation with Qwen models to decouple logical reasoning from belief-based inference in stereotyped-claim detection. Achieved 96.86% accuracy on Subtask 1 and 91.67% on Subtask 3.",
+    "pub.semeval.diagram.label": "Paper Diagram — System Architecture",
+    "pub.semeval.diagram.caption": "Figure: Sylloscope pipeline architecture — DeepSeek-enhanced knowledge distillation combined with Qwen models for stereotyped-claim detection.",
 
     // Projects
     "projects.title": "Weekend Projects",
@@ -244,6 +246,8 @@ const translations = {
     "pub.semeval.title": "Sylloscope at SemEval-2026 Task 11",
     "pub.semeval.venue": "SemEval-2026 Workshop Task 11, co-located with ACL 2026",
     "pub.semeval.desc": "Diseño de pipeline novedoso combinando destilación de conocimiento mejorada con DeepSeek y modelos Qwen para desacoplar razonamiento lógico de inferencia basada en creencias en detección de afirmaciones estereotipadas. 96.86% de precisión en Subtask 1 y 91.67% en Subtask 3.",
+    "pub.semeval.diagram.label": "Diagrama del Paper — Arquitectura del Sistema",
+    "pub.semeval.diagram.caption": "Figura: Arquitectura del pipeline Sylloscope — destilación de conocimiento mejorada con DeepSeek combinada con modelos Qwen para detección de afirmaciones estereotipadas.",
 
     // Projects
     "projects.title": "Proyectos Personales",

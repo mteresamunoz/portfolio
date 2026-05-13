@@ -9,8 +9,8 @@ const certifications = [
   { key: "cert.microsoft", logo: "images/microsoft.png", logoAlt: "Microsoft" },
   { key: "cert.hf", logo: "images/huggingface.png", logoAlt: "Hugging Face" },
   { key: "cert.anthropic1", logo: "images/anthropic.png", logoAlt: "Anthropic" },
-  { key: "cert.anthropic2", logo: "/images/anthropic.png", logoAlt: "Anthropic" },
-  { key: "cert.anthropic3", logo: "/images/anthropic.png", logoAlt: "Anthropic" },
+  { key: "cert.anthropic2", logo: "images/anthropic.png", logoAlt: "Anthropic" },
+  { key: "cert.anthropic3", logo: "images/anthropic.png", logoAlt: "Anthropic" },
 ]
 
 export function CertificationsSection() {
