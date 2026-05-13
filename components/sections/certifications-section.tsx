@@ -5,10 +5,10 @@ import { SectionHeading } from "@/components/ui/section-heading"
 import { Card, CardContent } from "@/components/ui/card"
 
 const certifications = [
-  { key: "cert.langchain", logo: "/images/langchain.jpg", logoAlt: "LangChain" },
-  { key: "cert.microsoft", logo: "/images/microsoft.png", logoAlt: "Microsoft" },
-  { key: "cert.hf", logo: "/images/huggingface.png", logoAlt: "Hugging Face" },
-  { key: "cert.anthropic1", logo: "/images/anthropic.png", logoAlt: "Anthropic" },
+  { key: "cert.langchain", logo: "images/langchain.jpg", logoAlt: "LangChain" },
+  { key: "cert.microsoft", logo: "images/microsoft.png", logoAlt: "Microsoft" },
+  { key: "cert.hf", logo: "images/huggingface.png", logoAlt: "Hugging Face" },
+  { key: "cert.anthropic1", logo: "images/anthropic.png", logoAlt: "Anthropic" },
   { key: "cert.anthropic2", logo: "/images/anthropic.png", logoAlt: "Anthropic" },
   { key: "cert.anthropic3", logo: "/images/anthropic.png", logoAlt: "Anthropic" },
 ]

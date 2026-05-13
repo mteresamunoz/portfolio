@@ -14,7 +14,7 @@ export function Hero() {
         <div className="flex justify-center">
           <div className="relative">
             <img
-              src="/images/foto mia.jpg"
+              src="images/foto mia.jpg"
               alt="María Teresa Muñoz Martín"
               className="h-40 w-40 sm:h-44 sm:w-44 rounded-full object-cover border-4 border-white shadow-md ring-2 ring-[#E8DDD3]"
             />
@@ -59,7 +59,7 @@ export function Hero() {
             asChild
             className="bg-[#C75B39] hover:bg-[#A84A2D] text-white rounded-full px-6"
           >
-            <a href="/CV_mtmm.pdf" download>
+            <a href="CV_mtmm.pdf" download>
               <Download className="mr-2 h-4 w-4" />
               {t("hero.cta.cv")}
             </a>

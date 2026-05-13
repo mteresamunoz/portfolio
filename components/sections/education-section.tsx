@@ -8,23 +8,23 @@ const education = [
   {
     id: "erasmus",
     logos: [
-      { src: "/images/ehu.png", alt: "EHU" },
-      { src: "/images/rug.png", alt: "RUG" },
-      { src: "/images/lct.png", alt: "LCT" },
+      { src: "images/ehu.png", alt: "EHU" },
+      { src: "images/rug.png", alt: "RUG" },
+      { src: "images/lct.png", alt: "LCT" },
     ],
     hasGpa: false,
   },
   {
     id: "bsc",
     logos: [
-      { src: "/images/uja.png", alt: "UJA" },
+      { src: "images/uja.png", alt: "UJA" },
     ],
     hasGpa: true,
   },
   {
     id: "bach",
     logos: [
-      { src: "/images/iesSantaCatalina.jpg", alt: "IES Santa Catalina" },
+      { src: "images/iesSantaCatalina.jpg", alt: "IES Santa Catalina" },
     ],
     hasGpa: false,
   },

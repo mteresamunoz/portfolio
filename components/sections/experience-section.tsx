@@ -8,14 +8,14 @@ import { Badge } from "@/components/ui/badge"
 const experiences = [
   {
     id: "alia",
-    logo: "/images/sinai.png",
+    logo: "images/sinai.png",
     logoAlt: "SINAI",
     descKeys: ["exp.alia.desc1", "exp.alia.desc2", "exp.alia.desc3", "exp.alia.desc4", "exp.alia.desc5"],
     tags: ["LLMs", "RAG", "NLP", "Python", "EU AI Act"],
   },
   {
     id: "investigo",
-    logo: "/images/hitz.png",
+    logo: "images/hitz.png",
     logoAlt: "HITZ",
     descKeys: ["exp.investigo.desc1", "exp.investigo.desc2", "exp.investigo.desc3"],
     tags: ["QLoRA", "LoRA-Q", "PEFT", "Basque", "GPU"],
