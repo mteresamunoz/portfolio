@@ -18,7 +18,7 @@ const experiences = [
     logo: "images/hitz.png",
     logoAlt: "HITZ",
     descKeys: ["exp.investigo.desc1", "exp.investigo.desc2", "exp.investigo.desc3"],
-    tags: ["QLoRA", "LoRA-Q", "PEFT", "Basque", "GPU"],
+    tags: ["QLoRA", "LoRA", "PEFT", "Basque", "GPU", "Latxa"],
   },
   {
     id: "initiation",

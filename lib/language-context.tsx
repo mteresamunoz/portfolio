@@ -51,6 +51,16 @@ const translations = {
     "edu.bach.institution": "IES Santa Catalina de Alejandría, Jaén",
     "edu.bach.date": "2018 – 2020",
     "edu.bach.desc": "Erasmus+ Rome 2019 — 1 of 2 students selected from 150 candidates.",
+    "edu.bach.sub.title": "Erasmus+ Program",
+    "edu.bach.sub.desc": "Erasmus+ Roma 2019 — 1 of 2 students selected from 150 candidates.",
+    "edu.bsc.sub.title": "Erasmus+ Exchange",
+    "edu.bsc.sub.desc": "Exchange at Vilnius University (Kaunas Faculty), Lithuania (2023–24).",
+    "edu.bsc.sub.thesis": "Thesis: BoTCA: RAG chatbot for eating-disorder prevention. Grade: 9.8/10",
+    "edu.erasmus.sub1.title": "First Year (2024–25)",
+    "edu.erasmus.sub1.institution": "University of Basque Country (EHU)",
+    "edu.erasmus.sub2.title": "Second Year (2025–26)",
+    "edu.erasmus.sub2.institution": "University of Groningen (RUG)",
+    "edu.erasmus.thesis": "Thesis: QLoRA vs LoRA-Q Pipelines for Basque: a Multi-Model Efficiency Analysis.",
 
     // Experience
     "exp.title": "Work Experience",
@@ -181,6 +191,16 @@ const translations = {
     "edu.bach.institution": "IES Santa Catalina de Alejandría, Jaén",
     "edu.bach.date": "2018 – 2020",
     "edu.bach.desc": "Erasmus+ Roma 2019 — 1 de 2 estudiantes seleccionadas de entre 150 candidatas.",
+    "edu.bach.sub.title": "Programa Erasmus+",
+    "edu.bach.sub.desc": "Erasmus+ Roma 2019 — 1 de 2 estudiantes seleccionados de 150 candidatos.",
+    "edu.bsc.sub.title": "Intercambio Erasmus+",
+    "edu.bsc.sub.desc": "Intercambio en Vilnius University (Kaunas Faculty), Lituania (2023–24).",
+    "edu.bsc.sub.thesis": "TFG: BoTCA: RAG chatbot para prevención de TCA. Nota: 9.8/10",
+    "edu.erasmus.sub1.title": "Primer Año (2024–25)",
+    "edu.erasmus.sub1.institution": "Universidad del País Vasco (EHU)",
+    "edu.erasmus.sub2.title": "Segundo Año (2025–26)",
+    "edu.erasmus.sub2.institution": "Universidad de Groningen (RUG)",
+    "edu.erasmus.thesis": "Tesis: QLoRA vs LoRA-Q Pipelines for Basque: a Multi-Model Efficiency Analysis.",
 
     // Experience
     "exp.title": "Experiencia Laboral",
