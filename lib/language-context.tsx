@@ -92,11 +92,11 @@ const translations = {
 
     // Skills
     "skills.title": "Technical Skills",
-    "skills.programming": "Programming",
+    "skills.programming": "Programming Languages",
     "skills.llm": "LLM & GenAI",
     "skills.rag": "RAG & Retrieval",
     "skills.nlp": "NLP Tasks",
-    "skills.frameworks": "Frameworks",
+    "skills.frameworks": "Frameworks & Libraries",
     "skills.infra": "Infrastructure & MLOps",
 
     // Publications
@@ -235,11 +235,11 @@ const translations = {
 
     // Skills
     "skills.title": "Habilidades Técnicas",
-    "skills.programming": "Programación",
+    "skills.programming": "Lenguajes de Programación",
     "skills.llm": "LLM y GenAI",
     "skills.rag": "RAG y Retrieval",
     "skills.nlp": "Tareas NLP",
-    "skills.frameworks": "Frameworks",
+    "skills.frameworks": "Frameworks y Librerías",
     "skills.infra": "Infraestructura y MLOps",
 
     // Publications
