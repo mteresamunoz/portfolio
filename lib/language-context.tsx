@@ -14,8 +14,8 @@ const translations = {
   en: {
     // Hero
     "hero.greeting": "Hi, I'm",
-    "hero.tagline": "I build intelligent systems for language understanding.",
-    "hero.description": "A passionate Computer Engineer specializing in Natural Language Processing. I tend to make use of AI carefully, embracing Green AI principles and ethical practices, to build systems that work great, feel intuitive, and respect both users and the planet.",
+    "hero.tagline": "I like building AI that makes life lighter, not just smarter.",
+    "hero.description": "I'm a Computer Engineer specialised in NLP, LLMs and Generative AI. We live in a world that moves fast and demands answers faster, and that's exactly where I want AI to make a difference. Not by replacing people, but by helping them: making the hard stuff easier, cutting through the noise, and turning 'I don't know where to start' into a clear next step. I build with responsibility at the core: ethical, sustainable, human-centred. Because with curiosity, perseverance, and the right technology, there's very little we can't figure out.",
     "hero.cta.cv": "Download CV",
     "hero.cta.explore": "Explore my work",
     "hero.role.computer": "Computer Engineer",
