@@ -2,7 +2,29 @@
 
 import { useLanguage } from "@/lib/language-context"
 import { SectionHeading } from "@/components/ui/section-heading"
-import { Badge } from "@/components/ui/badge"
+
+const logoMap: Record<string, string> = {
+  "Python": "images/python.png",
+  "SQL / MySQL": "images/sql.png",
+  "MySQL": "images/sql.png",
+  "C / C++": "images/c++.png",
+  "Java": "images/java.png",
+  "ChromaDB": "images/chromadb.png",
+  "vLLM": "images/vllm.png",
+  "PyTorch": "images/pytorch.png",
+  "Transformers": "images/huggingface.png",
+  "LangChain": "images/langchain.jpg",
+  "LangGraph": "images/langgraph.png",
+  "LlamaIndex": "images/llamaindex.jpg",
+  "FastAPI": "images/fastapi.png",
+  "React / Next.js": "images/nextjs.png",
+  "W&B": "images/w&b.png",
+  "Ollama": "images/ollama.png",
+  "HuggingFace Hub": "images/huggingface.png",
+  "Docker": "images/docker.png",
+  "GitHub Actions": "images/githubactions.png",
+  "Vercel": "images/vercelv0.png",
+}
 
 const skillCategories = [
   {
@@ -18,7 +40,7 @@ const skillCategories = [
     items: [
       "LoRA", "QLoRA", "NF4", "FP4", "Int8", "Double Quantization", "bitsandbytes",
       "vLLM", "Knowledge Distillation", "Prompt Engineering", "lm-evaluation-harness",
-      "RAGAS", "LLM-as-a-judge", "Responsible / Green AI", "Latxa",
+      "RAGAS", "LLM-as-a-judge", "Responsible / Green AI", "Multilingual", "Low-resource",
     ],
   },
   {
@@ -64,16 +86,25 @@ export function SkillsSection() {
               <h3 className="text-sm font-semibold uppercase tracking-wider text-[#C75B39] mb-4">
                 {t(category.key)}
               </h3>
-              <div className="flex flex-wrap gap-2">
-                {category.items.map((item) => (
-                  <Badge
-                    key={item}
-                    variant="outline"
-                    className="border-[#E8DDD3] text-[#2D2A26] bg-white hover:border-[#5A8F7B] hover:text-[#5A8F7B] transition-colors text-xs font-normal px-3 py-1.5"
-                  >
-                    {item}
-                  </Badge>
-                ))}
+              <div className="flex flex-wrap gap-2.5">
+                {category.items.map((item) => {
+                  const logo = logoMap[item]
+                  return (
+                    <div
+                      key={item}
+                      className="inline-flex items-center gap-2 rounded-full border border-[#E8DDD3] bg-white px-3.5 py-1.5 text-xs font-medium text-[#2D2A26] hover:border-[#C75B39]/40 transition-colors"
+                    >
+                      {logo && (
+                        <img
+                          src={logo}
+                          alt={item}
+                          className="h-4 w-auto object-contain"
+                        />
+                      )}
+                      <span>{item}</span>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           ))}
