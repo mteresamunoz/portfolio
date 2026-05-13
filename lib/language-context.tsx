@@ -15,7 +15,7 @@ const translations = {
     // Hero
     "hero.greeting": "Hi, I'm",
     "hero.tagline": "I like building AI that makes life lighter, not just smarter.",
-    "hero.description": "I'm a Computer Engineer specialised in NLP, LLMs and Generative AI. We live in a world that moves fast and demands answers faster, and that's exactly where I want AI to make a difference. Not by replacing people, but by helping them: making the hard stuff easier, cutting through the noise, and turning 'I don't know where to start' into a clear next step. I build with responsibility at the core: ethical, sustainable, human-centred. Because with curiosity, perseverance, and the right technology, there's very little we can't figure out.",
+    "hero.description": "I'm a Computer Engineer specialised in NLP, LLMs and Generative AI. We live in a world that moves fast and demands answers faster, and that's exactly where I want AI to make a difference. Not by replacing people, but by helping them: making the hard stuff easier, cutting through the noise, and turning 'I don't know where to start' into a clear next step. I build with responsibility at the core: ethical, sustainable, human-centred. With curiosity, perseverance, and the right technology, there's very little we can't figure out.",
     "hero.cta.cv": "Download CV",
     "hero.cta.explore": "Explore my work",
     "hero.role.computer": "Computer Engineer",
@@ -157,8 +157,8 @@ const translations = {
   es: {
     // Hero
     "hero.greeting": "Hola, soy",
-    "hero.tagline": "Construyo sistemas inteligentes para la comprensión del lenguaje.",
-    "hero.description": "Una apasionada Ingeniera Informática especializada en Procesamiento del Lenguaje Natural. Uso la IA con cuidado, siguiendo principios de Green AI y prácticas éticas, para construir sistemas que funcionan bien, son intuitivos y respetan tanto a los usuarios como al planeta.",
+    "hero.tagline": "Me gusta construir IA que hace la vida más ligera, no solo más inteligente.",
+    "hero.description": "Soy Ingeniera Informática especializada en PLN, LLMs e IA Generativa. Vivimos en un mundo que va rápido y exige respuestas aún más rápidas, y ahí es exactamente donde quiero que la IA marque la diferencia. No reemplazando a las personas, sino ayudándolas: haciendo que lo difícil sea más fácil, eliminando barreras, y convirtiendo el 'no sé por dónde empezar' en un siguiente paso claro. Construyo con responsabilidad como base: IA ética, sostenible y centrada en las personas. Con curiosidad, perseverancia y la tecnología adecuada, hay muy poco que no podamos resolver.",
     "hero.cta.cv": "Descargar CV",
     "hero.cta.explore": "Explorar mi trabajo",
     "hero.role.computer": "Ingeniera Informática",
