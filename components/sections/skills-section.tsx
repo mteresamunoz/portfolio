@@ -23,7 +23,8 @@ const logoMap: Record<string, string> = {
   "HuggingFace Hub": "images/huggingface.png",
   "Docker": "images/docker.png",
   "GitHub Actions": "images/githubactions.png",
-  "Vercel": "images/vercelv0.png",
+  "Vercel": "images/vercel.png",
+  "V0": "images/v0.png",
 }
 
 const skillCategories = [
@@ -63,7 +64,7 @@ const skillCategories = [
     key: "skills.frameworks",
     items: [
       "PyTorch", "Transformers", "PEFT", "LangChain", "LangGraph", "LlamaIndex",
-      "FastAPI", "React / Next.js", "W&B", "Ollama", "HuggingFace Hub",
+      "FastAPI", "React / Next.js", "W&B", "Ollama", "HuggingFace Hub", "V0",
     ],
   },
   {
