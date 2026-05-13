@@ -1,8 +1,44 @@
 "use client"
 
 import { useLanguage } from "@/lib/language-context"
-import { Github, Mail, Download, Linkedin } from "lucide-react"
+import { useState } from "react"
+import { Github, Mail, Download, Linkedin, Copy, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
+
+function EmailButton() {
+  const [copied, setCopied] = useState(false)
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText("maytemuma@gmail.com")
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // fallback
+    }
+  }
+
+  return (
+    <div className="inline-flex items-center gap-2 rounded-full border border-[#E8DDD3] bg-white px-5 py-2 text-sm font-medium text-[#2D2A26]">
+      <Mail className="h-4 w-4 text-[#C75B39]" />
+      <a href="mailto:maytemuma@gmail.com" className="hover:text-[#C75B39] transition-colors">
+        maytemuma@gmail.com
+      </a>
+      <button
+        onClick={handleCopy}
+        className="p-1 rounded-md hover:bg-[#E8DDD3]/50 text-[#6B6560] hover:text-[#C75B39] transition-colors"
+        aria-label="Copy email"
+        title="Copy email"
+      >
+        {copied ? (
+          <Check className="h-3.5 w-3.5 text-[#5A8F7B]" />
+        ) : (
+          <Copy className="h-3.5 w-3.5" />
+        )}
+      </button>
+    </div>
+  )
+}
 
 export function Hero() {
   const { t } = useLanguage()
@@ -85,16 +121,7 @@ export function Hero() {
                 LinkedIn
               </a>
             </Button>
-            <Button
-              variant="outline"
-              asChild
-              className="rounded-full border-[#E8DDD3] text-[#2D2A26] hover:bg-[#F5F0EB] hover:text-[#C75B39] px-6"
-            >
-              <a href="mailto:maytemuma@gmail.com">
-                <Mail className="mr-2 h-4 w-4" />
-                Email
-              </a>
-            </Button>
+            <EmailButton />
           </div>
         </div>
       </div>

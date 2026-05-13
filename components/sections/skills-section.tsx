@@ -7,14 +7,14 @@ import { Badge } from "@/components/ui/badge"
 const skillCategories = [
   {
     key: "skills.programming",
-    items: ["Python", "SQL / MySQL", "C / C++", "Java"],
+    items: ["Python", "SQL", "C / C++", "Java"],
   },
   {
     key: "skills.llm",
     items: [
       "LoRA", "QLoRA", "NF4", "FP4", "Int8", "Double Quantization", "bitsandbytes",
       "vLLM", "Knowledge Distillation", "Prompt Engineering", "lm-evaluation-harness",
-      "RAGAS", "LLM-as-a-judge", "Responsible / Green AI",
+      "RAGAS", "LLM-as-a-judge", "Responsible / Green AI","Latxa",
     ],
   },
   {
@@ -35,7 +35,7 @@ const skillCategories = [
     key: "skills.frameworks",
     items: [
       "PyTorch", "Transformers", "LangChain", "LangGraph", "LlamaIndex",
-      "FastAPI", "React / Next.js", "W&B", "Ollama", "HuggingFace Hub", "Latxa",
+      "FastAPI", "React / Next.js", "W&B", "Ollama", "HuggingFace Hub",
     ],
   },
   {

@@ -1,7 +1,37 @@
 "use client"
 
 import { useLanguage } from "@/lib/language-context"
-import { Github, Mail, ExternalLink, Linkedin } from "lucide-react"
+import { useState } from "react"
+import { Github, Mail, ExternalLink, Linkedin, Copy, Check } from "lucide-react"
+
+function CopyEmailButton() {
+  const [copied, setCopied] = useState(false)
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText("maytemuma@gmail.com")
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // fallback
+    }
+  }
+
+  return (
+    <button
+      onClick={handleCopy}
+      className="ml-1 p-1 rounded-md hover:bg-[#E8DDD3]/50 text-[#6B6560] hover:text-[#C75B39] transition-colors"
+      aria-label="Copy email"
+      title="Copy email"
+    >
+      {copied ? (
+        <Check className="h-3.5 w-3.5 text-[#5A8F7B]" />
+      ) : (
+        <Copy className="h-3.5 w-3.5" />
+      )}
+    </button>
+  )
+}
 
 export function Footer() {
   const { t } = useLanguage()
@@ -15,13 +45,11 @@ export function Footer() {
           </h2>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="mailto:maytemuma@gmail.com"
-              className="inline-flex items-center gap-2 rounded-full border border-[#E8DDD3] bg-[#FAF8F5] px-5 py-2.5 text-sm font-medium text-[#2D2A26] hover:border-[#C75B39] hover:text-[#C75B39] transition-colors"
-            >
-              <Mail className="h-4 w-4" />
-              maytemuma@gmail.com
-            </a>
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#E8DDD3] bg-[#FAF8F5] px-5 py-2.5 text-sm font-medium text-[#2D2A26]">
+              <Mail className="h-4 w-4 text-[#C75B39]" />
+              <span>maytemuma@gmail.com</span>
+              <CopyEmailButton />
+            </div>
             <a
               href="https://github.com/mteresamunoz"
               target="_blank"
