@@ -9,13 +9,13 @@ export function Hero() {
 
   return (
     <section className="relative px-4 py-20 sm:py-28 lg:py-32">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-stretch gap-10 md:gap-14">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-10 md:gap-14">
         {/* Profile photo - left, same height as text */}
         <div className="shrink-0 flex justify-center md:justify-start">
           <img
             src="images/foto mia.jpg"
             alt="María Teresa Muñoz Martín"
-            className="h-auto md:h-full w-auto max-w-[280px] md:max-w-none rounded-2xl object-contain border-4 border-white shadow-md ring-2 ring-[#E8DDD3]"
+            className="h-auto max-h-[380px] w-auto rounded-2xl object-cover border-4 border-white shadow-md ring-2 ring-[#E8DDD3]"
           />
         </div>
 

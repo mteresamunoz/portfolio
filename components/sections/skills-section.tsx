@@ -31,7 +31,7 @@ const skillCategories: SkillCategory[] = [
       { name: "Transformers", logo: "images/huggingface.png" },
       { name: "LangChain", logo: "images/langchain.jpg" },
       { name: "LangGraph", logo: "images/langgraph.png" },
-      { name: "HuggingFace Hub", logo: "/images/huggingface.png" },
+      { name: "HuggingFace Hub", logo: "images/huggingface.png" },
       { name: "Ollama", logo: "images/ollama.png" },
       { name: "LlamaIndex", logo: "images/llamaindex.jpg" },
       { name: "Latxa", logo: "images/latxa.png" },
