@@ -28,7 +28,8 @@ export function Hero() {
 
           {/* Name */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#2D2A26]">
-            María Teresa Muñoz Martín
+            <span className="block">María Teresa</span>
+            <span className="block text-[#6B6560]">Muñoz Martín</span>
           </h1>
 
           {/* Tagline */}
