@@ -11,10 +11,12 @@ const education = [
     mainLogo: "images/iesSantaCatalina.jpg",
     mainLogoAlt: "IES Santa Catalina",
     hasGpa: false,
+    thesisKey: null as string | null,
     subCards: [
       {
-        type: "text-icon" as const,
-        icon: Plane,
+        type: "logo-text" as const,
+        logo: "images/erasmus+instituto.png",
+        logoAlt: "Erasmus+",
         titleKey: "edu.bach.sub.title",
         descKey: "edu.bach.sub.desc",
       },
@@ -25,6 +27,7 @@ const education = [
     mainLogo: "images/uja.png",
     mainLogoAlt: "UJA",
     hasGpa: true,
+    thesisKey: "edu.bsc.sub.thesis" as string | null,
     subCards: [
       {
         type: "logo-text" as const,
@@ -32,7 +35,6 @@ const education = [
         logoAlt: "Vilnius University",
         titleKey: "edu.bsc.sub.title",
         descKey: "edu.bsc.sub.desc",
-        extraKey: "edu.bsc.sub.thesis",
       },
     ],
   },
@@ -41,6 +43,7 @@ const education = [
     mainLogo: "images/lct.png",
     mainLogoAlt: "Erasmus Mundus LCT",
     hasGpa: false,
+    thesisKey: "edu.erasmus.thesis" as string | null,
     subCards: [
       {
         type: "logo-text" as const,
@@ -48,7 +51,6 @@ const education = [
         logoAlt: "EHU",
         titleKey: "edu.erasmus.sub1.title",
         descKey: "edu.erasmus.sub1.institution",
-        extraKey: null,
       },
       {
         type: "logo-text" as const,
@@ -56,7 +58,6 @@ const education = [
         logoAlt: "RUG",
         titleKey: "edu.erasmus.sub2.title",
         descKey: "edu.erasmus.sub2.institution",
-        extraKey: "edu.erasmus.thesis",
       },
     ],
   },
@@ -100,6 +101,13 @@ export function EducationSection() {
                       </p>
                     )}
                   </div>
+
+                  {/* Thesis in main card */}
+                  {edu.thesisKey && (
+                    <p className="text-xs text-[#5A8F7B] font-medium leading-relaxed border-l-2 border-[#5A8F7B]/30 pl-3 text-left w-full">
+                      {t(edu.thesisKey)}
+                    </p>
+                  )}
                 </CardContent>
               </Card>
 
@@ -123,11 +131,6 @@ export function EducationSection() {
                           className="h-9 w-auto object-contain shrink-0"
                         />
                       )}
-                      {sub.type === "text-icon" && sub.icon && (
-                        <div className="flex items-center justify-center h-9 w-9 rounded-lg bg-[#F5F0EB] shrink-0">
-                          <Plane className="h-5 w-5 text-[#C75B39]" />
-                        </div>
-                      )}
                       <h4 className="text-sm font-semibold text-[#2D2A26]">
                         {t(sub.titleKey)}
                       </h4>
@@ -136,12 +139,6 @@ export function EducationSection() {
                     <p className="text-sm text-[#6B6560] leading-relaxed">
                       {t(sub.descKey)}
                     </p>
-
-                    {sub.extraKey && (
-                      <p className="text-xs text-[#5A8F7B] font-medium leading-relaxed border-l-2 border-[#5A8F7B]/30 pl-3">
-                        {t(sub.extraKey)}
-                      </p>
-                    )}
                   </div>
                 ))}
               </div>
