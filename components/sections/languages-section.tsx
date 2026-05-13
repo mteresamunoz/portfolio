@@ -31,11 +31,13 @@ export function LanguagesSection() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <img
-                      src="images/español.png"
-                      alt="ES"
-                      className="h-6 w-auto object-contain rounded-sm"
-                    />
+                    <div className="w-10 h-7 rounded-sm overflow-hidden shrink-0">
+                      <img
+                        src="images/español.png"
+                        alt="ES"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                     <span className="text-base font-medium text-[#2D2A26]">
                       {t("lang.spanish")}
                     </span>
@@ -46,11 +48,13 @@ export function LanguagesSection() {
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <img
-                      src="images/ingles.png"
-                      alt="EN"
-                      className="h-6 w-auto object-contain rounded-sm"
-                    />
+                    <div className="w-10 h-7 rounded-sm overflow-hidden shrink-0">
+                      <img
+                        src="images/ingles.png"
+                        alt="EN"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                     <span className="text-base font-medium text-[#2D2A26]">
                       {t("lang.english")}
                     </span>
