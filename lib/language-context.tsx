@@ -118,12 +118,15 @@ const translations = {
 
     // Certifications
     "cert.title": "Certifications",
+    "cert.credential": "Show Credential",
     "cert.langchain": "LangChain — Introduction to LangGraph (Python)",
     "cert.microsoft": "Microsoft — Applied Skills: Create a Generative AI Chat App",
     "cert.hf": "Hugging Face — Agents Course",
     "cert.anthropic1": "Anthropic — AI Fluency: Framework & Foundations",
     "cert.anthropic2": "Anthropic — Claude Code in Action",
     "cert.anthropic3": "Anthropic — Introduction to Model Context Protocol (MCP)",
+    "cert.anthropic4": "Anthropic — Introduction to Agent Skills",
+    "cert.anthropic4": "Anthropic — Introduction to Agent Skills",
 
     // Languages
     "lang.title": "Languages",
@@ -260,6 +263,7 @@ const translations = {
 
     // Certifications
     "cert.title": "Certificaciones",
+    "cert.credential": "Mostrar Credencial",
     "cert.langchain": "LangChain — Introduction to LangGraph (Python)",
     "cert.microsoft": "Microsoft — Applied Skills: Create a Generative AI Chat App",
     "cert.hf": "Hugging Face — Agents Course",

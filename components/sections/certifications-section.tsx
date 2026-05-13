@@ -3,14 +3,52 @@
 import { useLanguage } from "@/lib/language-context"
 import { SectionHeading } from "@/components/ui/section-heading"
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { ExternalLink } from "lucide-react"
 
 const certifications = [
-  { key: "cert.langchain", logo: "images/langchain.jpg", logoAlt: "LangChain" },
-  { key: "cert.microsoft", logo: "images/microsoft.png", logoAlt: "Microsoft" },
-  { key: "cert.hf", logo: "images/huggingface.png", logoAlt: "Hugging Face" },
-  { key: "cert.anthropic1", logo: "images/anthropic.png", logoAlt: "Anthropic" },
-  { key: "cert.anthropic2", logo: "images/anthropic.png", logoAlt: "Anthropic" },
-  { key: "cert.anthropic3", logo: "images/anthropic.png", logoAlt: "Anthropic" },
+  {
+    key: "cert.langchain",
+    logo: "images/langchain.jpg",
+    logoAlt: "LangChain",
+    url: "https://academy.langchain.com/certificates/wnfxxxvaln",
+  },
+  {
+    key: "cert.microsoft",
+    logo: "images/microsoft.png",
+    logoAlt: "Microsoft",
+    url: "https://learn.microsoft.com/es-es/users/marateresamuozmartn-1752/credentials/abfe754980025ef6?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+  },
+  {
+    key: "cert.hf",
+    logo: "images/huggingface.png",
+    logoAlt: "Hugging Face",
+    url: "https://cas-bridge.xethub.hf.co/xet-bridge-us/6800ea554845e4edbca48825/23529efccbc65eb43928d8c426eebe3d2fd0bcb02959b7c594d80a94569e8420?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20260513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260513T110530Z&X-Amz-Expires=3600&X-Amz-Signature=2f610ee4e44606cec121840f9dab415abe00337b21d45b48a80a5f863d7d87fe&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=6784e2bfdacadead50c67c05&response-content-disposition=inline%3B+filename*%3DUTF-8%27%272026-04-29.png%3B+filename%3D%222026-04-29.png%22%3B&response-content-type=image%2Fpng&x-amz-checksum-mode=ENABLED&x-id=GetObject&Expires=1778673930&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc3ODY3MzkzMH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82ODAwZWE1NTQ4NDVlNGVkYmNhNDg4MjUvMjM1MjllZmNjYmM2NWViNDM5MjhkOGM0MjZlZWJlM2QyZmQwYmNiMDI5NTliN2M1OTRkODBhOTQ1NjllODQyMCoifV19&Signature=YOKoKXBTqj8khw1hBUyh%7ERwWCsbIzSR1K7%7EN2grygVq3d9-ZXII%7EINeNze0cJovQt8wNDe1OGLmREeXIZkvEeZYhyLi1SNp1UkLE7nTd1OaRK9T80EQkypaoHzOgdmutwG3jokj25BA5Wk%7E%7ELYYAI-EJzmGRi79OPRMkwc0TwMRTPAhx1RxdLsZlPLRGwfd5fi1x0h80Kwergr27VGqWW-jJfAWJni%7EJ8kXQpD8fYAsyCfmC9Tc0SN6ob-V%7Eg89A7pJg3yhg7vqJPMJ5cCFsNb672Nn-yotqlQ6jtY0jMwHMo3vW0NVVXdUK6WxhMOVF%7EHPrgyUkBNQ6sXcHSQtjBg__&Key-Pair-Id=K2L8F4GPSG1IFC",
+  },
+  {
+    key: "cert.anthropic1",
+    logo: "images/anthropic.png",
+    logoAlt: "Anthropic",
+    url: "https://verify.skilljar.com/c/8qc3ju4o5kib",
+  },
+  {
+    key: "cert.anthropic2",
+    logo: "images/anthropic.png",
+    logoAlt: "Anthropic",
+    url: "https://verify.skilljar.com/c/c92kze37cpua",
+  },
+  {
+    key: "cert.anthropic3",
+    logo: "images/anthropic.png",
+    logoAlt: "Anthropic",
+    url: "https://verify.skilljar.com/c/we2pbzy95eg3",
+  },
+  {
+    key: "cert.anthropic4",
+    logo: "images/anthropic.png",
+    logoAlt: "Anthropic",
+    url: "https://verify.skilljar.com/c/6foiefdgojh2",
+  },
 ]
 
 export function CertificationsSection() {
@@ -21,21 +59,32 @@ export function CertificationsSection() {
       <div className="max-w-6xl mx-auto">
         <SectionHeading titleKey="cert.title" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {certifications.map((cert) => (
             <Card
               key={cert.key}
-              className="bg-white border-[#E8DDD3] hover:border-[#C75B39]/40 transition-colors duration-300 shadow-sm"
+              className="bg-white border-[#E8DDD3] hover:border-[#C75B39]/40 transition-colors duration-300 shadow-sm flex flex-col"
             >
-              <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
+              <CardContent className="p-5 flex flex-col items-center text-center space-y-4 flex-1">
                 <img
                   src={cert.logo}
                   alt={cert.logoAlt}
-                  className="h-14 w-auto object-contain"
+                  className="h-12 w-auto object-contain"
                 />
-                <p className="text-sm font-medium text-[#2D2A26]">
+                <p className="text-sm font-medium text-[#2D2A26] flex-1">
                   {t(cert.key)}
                 </p>
+                <Button
+                  asChild
+                  size="sm"
+                  variant="outline"
+                  className="rounded-full border-[#C75B39]/30 text-[#C75B39] hover:bg-[#C75B39] hover:text-white text-xs px-4"
+                >
+                  <a href={cert.url} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-1.5 h-3 w-3" />
+                    {t("cert.credential")}
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           ))}
