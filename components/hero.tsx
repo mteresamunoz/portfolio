@@ -60,7 +60,7 @@ export function Hero() {
               asChild
               className="bg-[#C75B39] hover:bg-[#A84A2D] text-white rounded-full px-6"
             >
-              <a href="CV_mtmm.pdf" download>
+              <a href="CV_Maria_Teresa_Munoz_Martin.pdf" download>
                 <Download className="mr-2 h-4 w-4" />
                 {t("hero.cta.cv")}
               </a>
