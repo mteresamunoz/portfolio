@@ -75,62 +75,79 @@ const skillCategories = [
   },
 ]
 
-export function SkillsSection() {
+function SkillCategoryCard({ category }: { category: typeof skillCategories[0] }) {
   const { t } = useLanguage()
+  const withLogo = category.items.filter((item) => logoMap[item])
+  const withoutLogo = category.items.filter((item) => !logoMap[item])
 
+  return (
+    <div className="bg-white rounded-xl border border-[#E8DDD3] p-5 sm:p-6">
+      <h3 className="text-sm font-semibold uppercase tracking-wider text-[#C75B39] mb-4">
+        {t(category.key)}
+      </h3>
+
+      {/* Icon cards — skills with logos */}
+      {withLogo.length > 0 && (
+        <div className="grid grid-cols-3 gap-3">
+          {withLogo.map((item) => (
+            <div
+              key={item}
+              className="flex flex-col items-center gap-2 p-3 rounded-lg bg-[#FAF8F5] border border-[#E8DDD3]/60 hover:border-[#C75B39]/40 transition-colors"
+            >
+              <img
+                src={logoMap[item]}
+                alt={item}
+                className="h-10 w-10 object-contain"
+              />
+              <span className="text-[11px] text-center font-medium text-[#2D2A26] leading-tight">
+                {item}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Subtle separator between icons and pills */}
+      {withLogo.length > 0 && withoutLogo.length > 0 && (
+        <div className="my-4 border-t border-[#E8DDD3]/60" />
+      )}
+
+      {/* Pill badges — skills without logos */}
+      {withoutLogo.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          {withoutLogo.map((item) => (
+            <span
+              key={item}
+              className="inline-flex items-center rounded-full border border-[#E8DDD3] bg-white px-3 py-1 text-xs font-medium text-[#2D2A26] hover:border-[#5A8F7B] hover:text-[#5A8F7B] transition-colors"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+export function SkillsSection() {
   return (
     <section id="skills" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <SectionHeading titleKey="skills.title" />
 
-        <div className="space-y-10">
-          {skillCategories.map((category) => {
-            const withLogo = category.items.filter((item) => logoMap[item])
-            const withoutLogo = category.items.filter((item) => !logoMap[item])
+        {/* 2-column grid for categories, paired for balance */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <SkillCategoryCard category={skillCategories[0]} />
+          <SkillCategoryCard category={skillCategories[1]} />
+          <SkillCategoryCard category={skillCategories[2]} />
+          <SkillCategoryCard category={skillCategories[3]} />
+          <SkillCategoryCard category={skillCategories[4]} />
+          <SkillCategoryCard category={skillCategories[5]} />
+        </div>
 
-            return (
-              <div key={category.key}>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-[#C75B39] mb-4">
-                  {t(category.key)}
-                </h3>
-
-                {/* Icons with logos */}
-                {withLogo.length > 0 && (
-                  <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 mb-4">
-                    {withLogo.map((item) => (
-                      <div
-                        key={item}
-                        className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white border border-[#E8DDD3] hover:border-[#C75B39]/40 transition-colors"
-                      >
-                        <img
-                          src={logoMap[item]}
-                          alt={item}
-                          className="h-11 w-11 object-contain"
-                        />
-                        <span className="text-xs text-center font-medium text-[#2D2A26] leading-tight">
-                          {item}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {/* Text-only pills */}
-                {withoutLogo.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
-                    {withoutLogo.map((item) => (
-                      <span
-                        key={item}
-                        className="inline-flex items-center rounded-full border border-[#E8DDD3] bg-white px-3.5 py-1.5 text-xs font-medium text-[#2D2A26] hover:border-[#5A8F7B] hover:text-[#5A8F7B] transition-colors"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            )
-          })}
+        {/* Last category centered below on desktop */}
+        <div className="mt-6 md:max-w-[calc(50%-12px)] md:mx-auto">
+          <SkillCategoryCard category={skillCategories[6]} />
         </div>
       </div>
     </section>
