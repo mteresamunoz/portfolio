@@ -51,9 +51,7 @@ export function Footer() {
             </a>
           </div>
 
-          <p className="text-sm text-[#6B6560]">
-            {t("contact.location")}
-          </p>
+         
 
           <div className="pt-6 border-t border-[#E8DDD3] w-full">
             <p className="text-xs text-[#6B6560]">
