@@ -15,7 +15,7 @@ export function Hero() {
           <img
             src="images/foto mia.jpg"
             alt="María Teresa Muñoz Martín"
-            className="h-40 w-40 sm:h-48 sm:w-48 md:h-52 md:w-52 rounded-full object-cover border-4 border-white shadow-md ring-2 ring-[#E8DDD3]"
+            className="w-48 sm:w-56 md:w-64 h-auto rounded-2xl object-contain border-4 border-white shadow-md ring-2 ring-[#E8DDD3]"
           />
         </div>
 
