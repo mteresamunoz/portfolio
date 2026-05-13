@@ -1,0 +1,124 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Light warm minimal theme */
+  --background: #FAF8F5;
+  --foreground: #2D2A26;
+  --card: #FFFFFF;
+  --card-foreground: #2D2A26;
+  --popover: #FFFFFF;
+  --popover-foreground: #2D2A26;
+  /* Terracotta primary */
+  --primary: #C75B39;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F5F0EB;
+  --secondary-foreground: #2D2A26;
+  --muted: #F5F0EB;
+  --muted-foreground: #6B6560;
+  /* Sage green accent */
+  --accent: #5A8F7B;
+  --accent-foreground: #FFFFFF;
+  --destructive: #C75B39;
+  --destructive-foreground: #FFFFFF;
+  --border: #E8DDD3;
+  --input: #E8DDD3;
+  --ring: #C75B39;
+  --chart-1: #C75B39;
+  --chart-2: #5A8F7B;
+  --chart-3: #3D405B;
+  --chart-4: #E8A87C;
+  --chart-5: #81B29A;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: #2D2A26;
+  --foreground: #FAF8F5;
+  --card: #3D3A36;
+  --card-foreground: #FAF8F5;
+  --popover: #3D3A36;
+  --popover-foreground: #FAF8F5;
+  --primary: #E07A5F;
+  --primary-foreground: #FFFFFF;
+  --secondary: #4A4743;
+  --secondary-foreground: #FAF8F5;
+  --muted: #4A4743;
+  --muted-foreground: #A8A29E;
+  --accent: #81B29A;
+  --accent-foreground: #2D2A26;
+  --destructive: #E07A5F;
+  --destructive-foreground: #FFFFFF;
+  --border: #4A4743;
+  --input: #4A4743;
+  --ring: #E07A5F;
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-serif: 'Lora', 'Georgia', serif;
+  --font-mono: 'JetBrains Mono', 'Geist Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom scrollbar - warm tones */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C4B5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C75B39;
+}
+
+/* Text selection */
+::selection {
+  background: rgba(199, 91, 57, 0.2);
+  color: #2D2A26;
+}
