@@ -4,7 +4,7 @@ import { useLanguage } from "@/lib/language-context"
 import { SectionHeading } from "@/components/ui/section-heading"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Globe, Brain, Shield, Dumbbell, Plane } from "lucide-react"
+import { Brain, Shield, Dumbbell, Plane } from "lucide-react"
 
 const softSkills = [
   { key: "soft.cross", icon: Plane },
@@ -31,7 +31,11 @@ export function LanguagesSection() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <Globe className="h-5 w-5 text-[#5A8F7B]" />
+                    <img
+                      src="images/español.png"
+                      alt="ES"
+                      className="h-6 w-auto object-contain rounded-sm"
+                    />
                     <span className="text-base font-medium text-[#2D2A26]">
                       {t("lang.spanish")}
                     </span>
@@ -42,7 +46,11 @@ export function LanguagesSection() {
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <Globe className="h-5 w-5 text-[#5A8F7B]" />
+                    <img
+                      src="images/ingles.png"
+                      alt="EN"
+                      className="h-6 w-auto object-contain rounded-sm"
+                    />
                     <span className="text-base font-medium text-[#2D2A26]">
                       {t("lang.english")}
                     </span>
