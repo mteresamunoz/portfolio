@@ -26,6 +26,7 @@ const logoMap: Record<string, string> = {
   "Vercel": "images/vercel.png",
   "V0": "images/vercelv0.png",
   "Orlacle": "images/oracle.png",
+  "Qdrant": "images/qdrant.png",
 }
 
 const skillCategories = [
