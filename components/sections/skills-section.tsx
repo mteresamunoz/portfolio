@@ -25,7 +25,7 @@ const logoMap: Record<string, string> = {
   "GitHub Actions": "images/githubactions.png",
   "Vercel": "images/vercel.png",
   "V0": "images/vercelv0.png",
-  "Orlacle": "images/oracle.png",
+  "Oracle": "images/oracle.png",
   "Qdrant": "images/qdrant.png",
 }
 
