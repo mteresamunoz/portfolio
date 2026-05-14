@@ -25,6 +25,7 @@ const logoMap: Record<string, string> = {
   "GitHub Actions": "images/githubactions.png",
   "Vercel": "images/vercel.png",
   "V0": "images/vercelv0.png",
+  "Orlacle": "images/oracle.png",
 }
 
 const skillCategories = [
@@ -34,7 +35,7 @@ const skillCategories = [
   },
   {
     key: "skills.databases",
-    items: ["MySQL", "ChromaDB", "Qdrant"],
+    items: ["MySQL", "ChromaDB", "Qdrant", "Oracle"],
   },
   {
     key: "skills.llm",
