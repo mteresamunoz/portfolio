@@ -24,10 +24,10 @@ const logoMap: Record<string, string> = {
   "Docker": "images/docker.png",
   "GitHub Actions": "images/githubactions.png",
   "Vercel": "images/vercel.png",
-  "V0": "images/vercelv0.png",
   "Oracle": "images/oracle.png",
   "Qdrant": "images/qdrant.png",
   "LaTeX": "images/latex.png",
+  "Claude Code": "images/claudecode.png",
 }
 
 const skillCategories = [
@@ -67,13 +67,13 @@ const skillCategories = [
     key: "skills.frameworks",
     items: [
       "PyTorch", "Transformers", "PEFT", "LangChain", "LangGraph", "LlamaIndex",
-      "FastAPI", "React / Next.js", "W&B", "Ollama", "HuggingFace Hub", "V0",
+      "FastAPI", "React / Next.js", "W&B", "Ollama", "HuggingFace Hub",
     ],
   },
   {
     key: "skills.infra",
     items: [
-      "Docker", "GitHub Actions", "Vercel", "HPC / GPU Clusters", "LaTeX",
+      "Docker", "GitHub Actions", "Vercel", "HPC / GPU Clusters", "LaTeX", "Claude Code",
     ],
   },
 ]
