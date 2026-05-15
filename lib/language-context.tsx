@@ -270,6 +270,7 @@ const translations = {
     "cert.anthropic1": "Anthropic — AI Fluency: Framework & Foundations",
     "cert.anthropic2": "Anthropic — Claude Code in Action",
     "cert.anthropic3": "Anthropic — Introduction to Model Context Protocol (MCP)",
+    "cert.anthropic4": "Anthropic — Introduction to Agent Skills",
 
     // Languages
     "lang.title": "Idiomas",
