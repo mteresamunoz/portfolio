@@ -136,7 +136,7 @@ const translations = {
 
     // Soft Skills
     "soft.title": "Soft Skills",
-    "soft.cross": "Cross-cultural adaptability: research & study experience in Spain, Italy, Lithuania, Netherlands.",
+    "soft.cross": "Cross-cultural adaptability: research & study experience in Spain, Italy, Lithuania and the Netherlands.",
     "soft.research": "Research mindset: design experiments, build benchmarks from scratch, iterate fast.",
     "soft.ethical": "Ethical commitment: human-in-the-loop and responsible-AI advocate.",
     "soft.discipline": "Discipline: competitive athlete (skiing, swimming, weightlifting).",
@@ -281,7 +281,7 @@ const translations = {
 
     // Soft Skills
     "soft.title": "Habilidades Blandas",
-    "soft.cross": "Adaptabilidad intercultural: experiencia de investigación y estudio en España, Italia, Lituania, Países Bajos.",
+    "soft.cross": "Adaptabilidad intercultural: experiencia de investigación y estudio en España, Italia, Lituania y Países Bajos.",
     "soft.research": "Mentalidad investigadora: diseñar experimentos, construir benchmarks desde cero, iterar rápido.",
     "soft.ethical": "Compromiso ético: defensora de human-in-the-loop e IA responsable.",
     "soft.discipline": "Disciplina: atleta competitiva (esquí, natación, halterofilia).",
