@@ -11,6 +11,7 @@ const navKeys = [
   { key: "nav.education", href: "#education" },
   { key: "nav.skills", href: "#skills" },
   { key: "nav.publications", href: "#publications" },
+  { key: "nav.professional", href: "#professional-projects" },
   { key: "nav.projects", href: "#projects" },
   { key: "nav.certifications", href: "#certifications" },
   { key: "nav.languages", href: "#languages" },

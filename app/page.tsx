@@ -8,6 +8,7 @@ import { EducationSection } from "@/components/sections/education-section"
 import { SkillsSection } from "@/components/sections/skills-section"
 import { PublicationsSection } from "@/components/sections/publications-section"
 import { ProjectsSection } from "@/components/sections/projects-section"
+import { ProfessionalProjectsSection } from "@/components/sections/professional-projects-section"
 import { CertificationsSection } from "@/components/sections/certifications-section"
 import { LanguagesSection } from "@/components/sections/languages-section"
 import { Footer } from "@/components/footer"
@@ -22,6 +23,7 @@ export default function Home() {
         <EducationSection />
         <SkillsSection />
         <PublicationsSection />
+        <ProfessionalProjectsSection />
         <ProjectsSection />
         <CertificationsSection />
         <LanguagesSection />

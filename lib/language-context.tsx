@@ -27,6 +27,7 @@ const translations = {
     "nav.experience": "Experience",
     "nav.skills": "Skills",
     "nav.publications": "Publications",
+    "nav.professional": "Professional Projects",
     "nav.projects": "Weekend Projects",
     "nav.certifications": "Certifications",
     "nav.languages": "Languages",
@@ -64,7 +65,7 @@ const translations = {
 
     // Experience
     "exp.title": "Work Experience",
-    "exp.alia.title": "Machine Learning Researcher — ALIA Project",
+    "exp.alia.title": "Machine Learning Researcher",
     "exp.alia.company": "SINAI Research Group, University of Jaén",
     "exp.alia.date": "Jan 2026 – Present",
     "exp.alia.desc1": "Spanish Government strategic initiative for sovereign Spanish LLMs.",
@@ -73,7 +74,7 @@ const translations = {
     "exp.alia.desc4": "Building a web platform for LLM-driven counter-narrative generation against antigypsyism with KAMIRA.",
     "exp.alia.desc5": "Defined model-evaluation protocols aligned with EU AI Act transparency requirements.",
     
-    "exp.investigo.title": "LLM Researcher — Investigo Programme (NextGenerationEU)",
+    "exp.investigo.title": "LLM Researcher",
     "exp.investigo.company": "HITZ Center for Language Technology, University of Basque Country",
     "exp.investigo.date": "Nov 2024 – Oct 2025",
     "exp.investigo.desc1": "Designed and benchmarked a Parameter-Efficient Fine-Tuning protocol for Basque LLMs (QLoRA vs LoRA-Q).",
@@ -107,6 +108,21 @@ const translations = {
     "pub.semeval.desc": "Designed a novel pipeline combining DeepSeek-enhanced knowledge distillation with Qwen models to decouple logical reasoning from belief-based inference in stereotyped-claim detection. Achieved 96.86% accuracy on Subtask 1 and 91.67% on Subtask 3.",
     "pub.semeval.diagram.label": "Paper Diagram — System Architecture",
     "pub.semeval.diagram.caption": "Figure: Sylloscope pipeline architecture — DeepSeek-enhanced knowledge distillation combined with Qwen models for stereotyped-claim detection.",
+
+    // Professional Projects
+    "pro.title": "Research & Development Projects",
+    "pro.alia.title": "ALIA (National Strategic AI Initiative)",
+    "pro.alia.subtitle": "Sovereign Spanish LLMs — SINAI Research Group, UJA",
+    "pro.alia.desc": "Direct contribution to ALIA, the Spanish Government's strategic initiative for sovereign Spanish Language Models (LLMs). Developed within the SINAI Research Group at the University of Jaén (UJA).\nDesigned and implemented large-scale Spanish corpus-curation pipelines with millions of tokens for retrieval-augmented LLM training, integrating deduplication, language identification and toxicity filtering.\nDeveloped high-precision translation workflows (Spanish-English) and quality control to produce cross-lingual benchmarking corpora.\nDefined model-evaluation protocols aligned with EU AI Act transparency requirements and responsible-AI standards (bias and toxicity probes).\nParallel contribution to competitive research projects (CONSENSO, MODERATES, SocialTOX) generating publication-ready datasets and trained models.",
+    "pro.romanet.title": "RomaNET (European Commission — CERV)",
+    "pro.romanet.subtitle": "Multilingual NLP for anti-Roma hate-speech detection",
+    "pro.romanet.desc": "Project funded by the European Commission (CERV-2024-CHAR-LITI-SPEECH) focused on developing multilingual NLP pipelines for detecting hate speech and hate crimes specifically targeting the Roma community (antigypsyism).\nTechnical development and deployment of an AI-powered web platform (\"AKANAI\") designed for the instant generation of positive counter-narratives against hate speech.",
+    "pro.kamira.title": "KAMIRA Project (Counter-narratives against Antigypsyism)",
+    "pro.kamira.subtitle": "AI-powered platform co-developed with civil society",
+    "pro.kamira.desc": "Direct collaboration with the National Federation of Roma Women's Associations (KAMIRA) to build a specific web platform aimed at mitigating structural hate through AI.\nUnlike RomaNET, which is a general multilingual European detection and generation research framework, KAMIRA is a direct-impact application in the Spanish national ecosystem, co-developed hand-in-hand with the associative fabric (human-in-the-loop).\nDevelopment and engineering of a counter-narrative generation system using advanced prompt-engineering techniques and information-retrieval-based grounding to ensure content veracity.\nRigorous implementation of content-safety guardrails to prevent hallucinations or harmful responses in sensitive human-rights environments.",
+    "pro.investigo.title": "Investigo Programme — HITZ Center (NextGenerationEU)",
+    "pro.investigo.subtitle": "Efficient LLM fine-tuning for low-resource languages",
+    "pro.investigo.desc": "Research stay at the prestigious HITZ (Language Technology Center of the University of the Basque Country — EHU) under the Investigo Programme, from which my Master's Thesis directly derived, focused on the efficiency of language models in low-resource languages.\nDesign and benchmarking of an efficient Parameter-Efficient Fine-Tuning (PEFT) protocol for Basque LLMs, comparing QLoRA workflows against LoRA-Q approaches (full-precision adaptation followed by post-hoc compression) in Int8, FP4 and NF4 precisions.\nComparative evaluation across three architectures: Gemma-2-9B, Qwen-3-8B and the Basque-specialised Latxa-3.1-8B model, determining that NF4 with Double Quantization is the most robust format in linguistic quality.\nAchievement of a >50% reduction in VRAM usage, enabling 8B-parameter LLMs to run on consumer GPUs (RTX 3090/4090) instead of costly data-center infrastructure, optimising inference latency and promoting Green AI and sustainability.",
 
     // Projects
     "projects.title": "Weekend Projects",
@@ -153,6 +169,7 @@ const translations = {
     // Common
     "common.viewCode": "View Code",
     "common.visitSite": "Visit Site",
+    "common.visitPlatform": "Access Platform",
     "common.present": "Present",
   },
   es: {
@@ -171,6 +188,7 @@ const translations = {
     "nav.experience": "Experiencia",
     "nav.skills": "Habilidades",
     "nav.publications": "Publicaciones",
+    "nav.professional": "Proyectos Profesionales",
     "nav.projects": "Proyectos Personales",
     "nav.certifications": "Certificaciones",
     "nav.languages": "Idiomas",
@@ -208,7 +226,7 @@ const translations = {
 
     // Experience
     "exp.title": "Experiencia Laboral",
-    "exp.alia.title": "Investigadora de Machine Learning — Proyecto ALIA",
+    "exp.alia.title": "Investigadora de Machine Learning",
     "exp.alia.company": "Grupo de investigación SINAI, Universidad de Jaén",
     "exp.alia.date": "Ene 2026 – Presente",
     "exp.alia.desc1": "Iniciativa estratégica del Gobierno de España para LLMs soberanos en español.",
@@ -217,7 +235,7 @@ const translations = {
     "exp.alia.desc4": "Desarrollo de plataforma web para generación de contranarrativas contra el antigitanismo con KAMIRA.",
     "exp.alia.desc5": "Definición de protocolos de evaluación alineados con los requisitos de transparencia del EU AI Act.",
     
-    "exp.investigo.title": "Investigadora de LLM — Programa Investigo (NextGenerationEU)",
+    "exp.investigo.title": "Investigadora de LLM",
     "exp.investigo.company": "Centro HITZ para Tecnología del Lenguaje, Universidad del País Vasco",
     "exp.investigo.date": "Nov 2024 – Oct 2025",
     "exp.investigo.desc1": "Diseño y evaluación de protocolo PEFT para LLMs en euskera (QLoRA vs LoRA-Q).",
@@ -251,6 +269,21 @@ const translations = {
     "pub.semeval.desc": "Diseño de pipeline novedoso combinando destilación de conocimiento mejorada con DeepSeek y modelos Qwen para desacoplar razonamiento lógico de inferencia basada en creencias en detección de afirmaciones estereotipadas. 96.86% de precisión en Subtask 1 y 91.67% en Subtask 3.",
     "pub.semeval.diagram.label": "Diagrama del Paper — Arquitectura del Sistema",
     "pub.semeval.diagram.caption": "Figura: Arquitectura del pipeline Sylloscope — destilación de conocimiento mejorada con DeepSeek combinada con modelos Qwen para detección de afirmaciones estereotipadas.",
+
+    // Professional Projects
+    "pro.title": "Proyectos de Investigación y Desarrollo",
+    "pro.alia.title": "ALIA (Iniciativa Estratégica Nacional de IA)",
+    "pro.alia.subtitle": "LLMs soberanos en español — Grupo SINAI, UJA",
+    "pro.alia.desc": "Contribución directa a ALIA, la iniciativa estratégica del Gobierno de España para el desarrollo de Modelos de Lenguaje (LLMs) soberanos en español. Desarrollado dentro del Grupo de Investigación SINAI de la Universidad de Jaén (UJA).\nDiseño e implementación a gran escala de pipelines de curación de corpus en español con millones de tokens para el entrenamiento de LLMs con RAG, integrando desduplicación, identificación de idioma y filtrado de toxicidad.\nDesarrollo de flujos de trabajo de traducción de alta precisión (Español-Inglés) y control de calidad para producir corpus paralelos de evaluación comparativa cross-lingual.\nDefinición de protocolos de evaluación de modelos alineados con los requisitos de transparencia de la Ley de IA de la UE y estándares de IA responsable (probes de sesgo y toxicidad).\nContribución paralela a proyectos de investigación competitivos asociados (CONSENSO, MODERATES, SocialTOX) generando conjuntos de datos listos para publicación y modelos entrenados.",
+    "pro.romanet.title": "RomaNET (Comisión Europea — CERV)",
+    "pro.romanet.subtitle": "NLP multilingüe para detección de discurso de odio antigitano",
+    "pro.romanet.desc": "Proyecto financiado por la Comisión Europea (CERV-2024-CHAR-LITI-SPEECH) enfocado en el desarrollo de pipelines de PLN multilingües para la detección de discurso y delitos de odio dirigidos específicamente contra la comunidad romaní (antigitanismo).\nDesarrollo técnico y despliegue de una plataforma web impulsada por IA (\"AKANAI\") diseñada para la generación instantánea de contranarrativas positivas frente al discurso de odio.",
+    "pro.kamira.title": "Proyecto KAMIRA (Contranarrativas contra el Antigitanismo)",
+    "pro.kamira.subtitle": "Plataforma impulsada por IA codesarrollada con la sociedad civil",
+    "pro.kamira.desc": "Colaboración directa con la Federación Nacional de Asociaciones de Mujeres Gitanas (KAMIRA) para construir una plataforma web específica orientada a la mitigación del odio estructural mediante IA.\nMientras que RomaNET es un framework multilingüe europeo de detección y generación general centrado en la investigación académica, KAMIRA es una aplicación de impacto directo en el ecosistema nacional español, codesarrollada mano a mano con el tejido asociativo (human-in-the-loop).\nDesarrollo e ingeniería del sistema de generación de contranarrativas utilizando técnicas avanzadas de ingeniería de prompts y grounding basado en recuperación de información para asegurar la veracidad del contenido.\nImplementación rigurosa de filtros de seguridad de contenido (content-safety guardrails) para evitar alucinaciones o respuestas dañinas en entornos sensibles de derechos humanos.",
+    "pro.investigo.title": "Programa Investigo — HITZ Center (NextGenerationEU)",
+    "pro.investigo.subtitle": "Ajuste fino eficiente de LLM para lenguas de bajos recursos",
+    "pro.investigo.desc": "Estancia de investigación en el prestigioso HITZ (Centro de Tecnología de la Lengua de la Universidad del País Vasco — EHU) bajo el Programa Investigo, del cual derivó directamente mi Trabajo de Fin de Máster (TFM) enfocado en la eficiencia de modelos de lenguaje en lenguas de bajos recursos.\nDiseño y benchmarking de un protocolo de ajuste fino eficiente (PEFT) para LLMs en euskera, comparando flujos de trabajo QLoRA contra enfoques LoRA-Q (adaptación en precisión completa seguida de compresión post-hoc) en precisiones Int8, FP4 y NF4.\nEvaluación y análisis comparativo sobre tres arquitecturas: Gemma-2-9B, Qwen-3-8B y el modelo especializado en euskera Latxa-3.1-8B, determinando que NF4 con Doble Cuantización es el formato más robusto en calidad lingüística.\nLogro de una reducción de más del 50% en el uso de VRAM, permitiendo que LLMs de 8B de parámetros se ejecuten en GPUs de consumo (RTX 3090/4090) en lugar de costosas infraestructuras de centros de datos, optimizando la latencia de inferencia y promoviendo una IA Verde (Green AI) y sostenible.",
 
     // Projects
     "projects.title": "Proyectos Personales",
@@ -298,6 +331,7 @@ const translations = {
     // Common
     "common.viewCode": "Ver Código",
     "common.visitSite": "Visitar Web",
+    "common.visitPlatform": "Acceder a Plataforma",
     "common.present": "Presente",
   }
 }
