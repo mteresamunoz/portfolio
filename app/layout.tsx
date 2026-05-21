@@ -31,16 +31,16 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon.svg',
+        url: 'favicon.svg',
         type: 'image/svg+xml',
       },
       {
-        url: '/icon-32x32.png',
+        url: 'icon-32x32.png',
         sizes: '32x32',
         type: 'image/png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: 'apple-icon.png',
   },
 }
 
