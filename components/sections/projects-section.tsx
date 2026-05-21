@@ -16,6 +16,7 @@ const projects = [
   },
   {
     id: "pergamia",
+    gif: "images/Animation.gif",
     links: [],
   },
 ]
@@ -44,6 +45,15 @@ export function ProjectsSection() {
                 <p className="text-sm text-[#6B6560] leading-relaxed flex-1">
                   {t(`projects.${project.id}.desc`)}
                 </p>
+
+                {project.gif && (
+                  <img
+                    src={project.gif}
+                    alt={t(`projects.${project.id}.title`)}
+                    className="w-full rounded-lg border border-[#E8DDD3]"
+                    loading="lazy"
+                  />
+                )}
 
                 <div className="flex flex-wrap gap-1.5">
                   {t(`projects.${project.id}.stack`)
