@@ -108,6 +108,9 @@ const translations = {
     "pub.semeval.desc": "Designed a novel pipeline combining DeepSeek-enhanced knowledge distillation with Qwen models to decouple logical reasoning from belief-based inference in stereotyped-claim detection. Achieved 96.86% accuracy on Subtask 1 and 91.67% on Subtask 3.",
     "pub.semeval.diagram.label": "Paper Diagram — System Architecture",
     "pub.semeval.diagram.caption": "Figure: Sylloscope pipeline architecture — DeepSeek-enhanced knowledge distillation combined with Qwen models for stereotyped-claim detection.",
+    "pub.legal.title": "Performant Lightweight Encoders for Spanish in the Legal and Administrative Domains",
+    "pub.legal.venue": "Journal of Natural Language Processing (SEPLN 2026), Issue 77",
+    "pub.legal.desc": "Introduced two lightweight, domain-adapted models (bi-encoder and cross-encoder) for Spanish legal and administrative information retrieval built on the MrBERT-es backbone. Utilized a synthetic data generation pipeline combined with a six-phase curriculum learning strategy and positive-aware mining. Outperformed larger general-purpose models like bge-m3 and Qwen3-Embedding on specialized benchmarks, demonstrating that targeted domain adaptation and careful training design can effectively compensate for model scale.",
 
     // Professional Projects
     "pro.title": "Research & Development Projects",
@@ -269,6 +272,9 @@ const translations = {
     "pub.semeval.desc": "Diseño de pipeline novedoso combinando destilación de conocimiento mejorada con DeepSeek y modelos Qwen para desacoplar razonamiento lógico de inferencia basada en creencias en detección de afirmaciones estereotipadas. 96.86% de precisión en Subtask 1 y 91.67% en Subtask 3.",
     "pub.semeval.diagram.label": "Diagrama del Paper — Arquitectura del Sistema",
     "pub.semeval.diagram.caption": "Figura: Arquitectura del pipeline Sylloscope — destilación de conocimiento mejorada con DeepSeek combinada con modelos Qwen para detección de afirmaciones estereotipadas.",
+    "pub.legal.title": "Performant Lightweight Encoders for Spanish in the Legal and Administrative Domains",
+    "pub.legal.venue": "Revista de Procesamiento del Lenguaje Natural (SEPLN 2026), Número 77",
+    "pub.legal.desc": "Se presentaron dos modelos ligeros adaptados al dominio (bi-encoder y cross-encoder) para recuperación de información legal y administrativa en español, construidos sobre el backbone MrBERT-es. Se utilizó un pipeline de generación sintética de datos combinado con una estrategia de aprendizaje curricular de seis fases y minería consciente de positivos. Superaron a modelos de propósito general más grandes como bge-m3 y Qwen3-Embedding en benchmarks especializados, demostrando que la adaptación de dominio dirigida y el diseño cuidadoso del entrenamiento pueden compensar eficazmente la escala del modelo.",
 
     // Professional Projects
     "pro.title": "Proyectos de Investigación y Desarrollo",

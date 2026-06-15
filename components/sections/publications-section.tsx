@@ -87,6 +87,25 @@ export function PublicationsSection() {
             </div>
           </CardContent>
         </Card>
+
+        <Card className="bg-white border-[#E8DDD3] shadow-sm overflow-hidden mt-8">
+          <CardContent className="p-6 sm:p-8 space-y-4">
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-lg sm:text-xl font-semibold text-[#2D2A26]">
+                  {t("pub.legal.title")}
+                </h3>
+                <p className="text-sm text-[#C75B39] font-medium mt-1">
+                  {t("pub.legal.venue")}
+                </p>
+              </div>
+
+              <p className="text-base text-[#6B6560] leading-relaxed">
+                {t("pub.legal.desc")}
+              </p>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   )
