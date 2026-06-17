@@ -65,7 +65,7 @@ const translations = {
 
     // Experience
     "exp.title": "Work Experience",
-    "exp.alia.title": "Machine Learning Researcher",
+    "exp.alia.title": "Machine Learning Engineer",
     "exp.alia.company": "SINAI Research Group, University of Jaén",
     "exp.alia.date": "Jan 2026 – Present",
     "exp.alia.desc1": "Spanish Government strategic initiative for sovereign Spanish LLMs.",
@@ -74,7 +74,7 @@ const translations = {
     "exp.alia.desc4": "Building a web platform for LLM-driven counter-narrative generation against antigypsyism with KAMIRA.",
     "exp.alia.desc5": "Defined model-evaluation protocols aligned with EU AI Act transparency requirements.",
     
-    "exp.investigo.title": "LLM Researcher",
+    "exp.investigo.title": "Generative AI & LLM Engineer",
     "exp.investigo.company": "HITZ Center for Language Technology, University of Basque Country",
     "exp.investigo.date": "Nov 2024 – Oct 2025",
     "exp.investigo.desc1": "Designed and benchmarked a Parameter-Efficient Fine-Tuning protocol for Basque LLMs (QLoRA vs LoRA-Q).",
@@ -229,7 +229,7 @@ const translations = {
 
     // Experience
     "exp.title": "Experiencia Laboral",
-    "exp.alia.title": "Investigadora de Machine Learning",
+    "exp.alia.title": "Ingeniera de Machine Learning",
     "exp.alia.company": "Grupo de investigación SINAI, Universidad de Jaén",
     "exp.alia.date": "Ene 2026 – Presente",
     "exp.alia.desc1": "Iniciativa estratégica del Gobierno de España para LLMs soberanos en español.",
@@ -238,7 +238,7 @@ const translations = {
     "exp.alia.desc4": "Desarrollo de plataforma web para generación de contranarrativas contra el antigitanismo con KAMIRA.",
     "exp.alia.desc5": "Definición de protocolos de evaluación alineados con los requisitos de transparencia del EU AI Act.",
     
-    "exp.investigo.title": "Investigadora de LLM",
+    "exp.investigo.title": "Ingeniera de LLM e IA Generativa",
     "exp.investigo.company": "Centro HITZ para Tecnología del Lenguaje, Universidad del País Vasco",
     "exp.investigo.date": "Nov 2024 – Oct 2025",
     "exp.investigo.desc1": "Diseño y evaluación de protocolo PEFT para LLMs en euskera (QLoRA vs LoRA-Q).",
